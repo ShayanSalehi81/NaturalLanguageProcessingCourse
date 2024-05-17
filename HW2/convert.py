@@ -1,12 +1,11 @@
 import json
 import string
 from hazm import Lemmatizer
-from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.tokenize import word_tokenize
 
 import nltk
 
-nltk.download('punkt')
-
+# nltk.download('punkt')
 
 def find_all_words_possible(word, first_letter_to_harf_mapping, letter_to_harf_mapping):
     converted_words = []
@@ -107,5 +106,5 @@ def convert(text):
 
 
 # usage example
-s = convert('forsat ha, mesle abr migozarand; bayad ghadreshan ra bedanim.')
-print(s[0:5])
+# s = convert('forsat ha, mesle abr migozarand; bayad ghadreshan ra bedanim.')
+# print(s[0][1])
