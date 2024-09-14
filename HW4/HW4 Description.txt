@@ -1,0 +1,23 @@
+In this exercise, each group will select one of the suggested topics. In case you want to analyze one of the topics on the judicial data collection, explain the situation and address the team to send it for review after receiving approval. You can perform your exercise on that topic.
+
+For topics that have already been reviewed by students, their best attempts will be made available to you to prevent redundancy. It is expected that your efforts on that topic will improve the performance of previous code.
+
+This exercise does not require the use of transformer-based models.
+
+For these topics, report the metrics Bleu, Rouge, and Bert-Score {1.0.2.0.4}, and if another metric is necessary, it has been stated previously.
+
+Medical Question and Answer System
+In this project, the goal is to design a model for question and answer in the medical field, based on information retrieval. Essentially, your model must provide an answer based on the existing information, by retrieving a medical text relevant to the question.
+
+Retrieval of Related Texts
+The first step is to retrieve the relevant medical text related to the question you received. For this purpose, you need a suitable dataset of medical texts. You can use a simple method (such as cosine-similarity) for text retrieval. A suitable dataset for this purpose is the abstracts of articles from pubMed.
+
+Answer Generation
+After retrieving the related text, you need to use a large language model like GPT-based models. These models should generate an answer based on the received question and retrieved text. The model you choose must be fine-tuned on this task. (For example, a model like T5 that can use Google Colab resources for fine-tuning is recommended).
+
+The combination of the question and the retrieved text should be suitable for the model to produce an accurate answer. In this case, the quality of the generated answer will improve. This point will be considered in the project assessment. Also, it is necessary to evaluate the model's performance before and after fine-tuning.
+
+Question and Answer Datasets
+Several question and answer datasets are available in the medical field. Using other existing question and answer datasets also does not pose any issues.
+
+Here is a link to some medical question and answer datasets. Using datasets from HuggingFace like the existing medical datasets is also valid.

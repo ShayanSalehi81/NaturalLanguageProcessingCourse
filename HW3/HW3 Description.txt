@@ -1,0 +1,36 @@
+In this exercise, each group will select one of the suggested topics. Each topic consists of two categories: document classification and word classification. If you wish to exchange any of the topics with another group, provide details and the address of the relevant court group to the teaching team in the classroom for review and approval. After approval by the teaching team, you will be able to work on your chosen exercise.
+
+For topics that have been previously reviewed by students, the codes will be available to you. It's best not to reuse them as they may cause poor learning outcomes. So, it is expected that you attempt to improve this topic by enhancing the performance of the models that were previously implemented. This may be done by using advanced tuning techniques or by reducing the error rate. The group is expected to analyze the mistakes of models, as those mistakes may have similar patterns. After the group investigates the areas prone to error and identifies recurring cases, the group must analyze whether these mistakes are related to the structure of the data or to other factors.
+
+In the document classification section, the suggested topic must be implemented using the following two models:
+
+Base Model: Implement models using Naive Bayes, Linear-SVM, or Logistic Regression based on tf-idf feature extraction.
+Main Model: Use transformer-based models (for example, fine-tuning BERT-like models).
+In the word classification section, the suggested topic must be implemented using the following two models:
+
+Base Model: Use HMM or LSTM/CRF.
+Main Model: Use transformer-based models.
+In order to use the court's decisions for each section, you must divide your court's data into three parts: 80%, 10%, and 10%. This is to ensure that part of the court's dataset (or some of the dataset) is reserved, so it may be used for comparison with the rest of the data that is shared among the groups. Therefore, after selecting the complete model and choosing the method, use part of the dataset for comparison. Pay attention to the fact that you should first evaluate the models on the training data (80%), and then the remaining 10% of the court's data should be used for final testing. In this way, the error values and differences in the models’ performances must be calculated and reported. The model must be evaluated using cross-validation and hyperparameter tuning methods. Finally, the complete report should include error metrics and the differences (deviations) between the performances of the models.
+
+In the word classification section, it's necessary to calculate metrics like Accuracy, F1 (macro/micro), Recall, and Precision.
+
+To better understand and explore the models required for future sessions, you can review Huggingface tutorials in this link and submit them as instructed.
+
+Film Genre Detection
+Text Classification
+In this task, we aim to teach the model that by summarizing the film, it can determine the genre of the film. In this task, we will use the Synopsis Database. This database contains summaries and genres of films, and other information such as production year for Iranian and English films. To do this, train your models in both Persian and English languages. For transformer-based models, you can use BERT.
+
+Example:
+
+Javad, a former philosophy student, is upset by his sister, who suffers from bipolar disorder, along with two of his friends. He is also dealing with his marriage proposal, which his girlfriend's football-loving father has objected to. Javad, who is angry about his home situation, goes on a road trip with a music composer. During the trip, Javad meets a taxi driver named Jalal, who shares his strange story, and they bond on their journey.
+Film name: Flight
+Genre category: Drama
+Named entity: B-pers
+Word Classification
+In this section, you should classify words. Perform this task based on the named entities. For this part, use CONLL data. A named entity could be something like the names of characters or places that appear in the synopsis. These named entities must be appropriately extracted and classified, and their results reported.
+
+Attention
+The data given to you must be thoroughly pre-processed, and you must ensure that the model you use will work well with high-quality data. In this analysis, the primary model can be built based on the synopsis analysis and genre classification. This will help you advance in the main part of the project.
+Evaluate the model's performance using a train, validation, and test split. Then report the model's performance. Also, test your model with 50 non-Iranian film synopses to assess the model's genre classification accuracy for English films.
+The final report must include the performance results for both English and Persian languages, and the performance of the models must be indicated separately for each.
+Report the differences in performance between Persian and English on the test data as well as the court dataset (OOD data).
